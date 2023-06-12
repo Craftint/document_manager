@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:document_name",
+ "creation": "2023-06-12 12:36:23.404745",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "default_expiry",
+  "column_break_fgcm6",
+  "alert_before",
+  "section_break_z1qmw",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "label": "Document Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "default_expiry",
+   "fieldtype": "Float",
+   "label": "Default Expiry (In Months)"
+  },
+  {
+   "default": "30",
+   "fieldname": "alert_before",
+   "fieldtype": "Int",
+   "label": "Alert Before (In Days)"
+  },
+  {
+   "fieldname": "column_break_fgcm6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_z1qmw",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-12 15:48:25.090657",
+ "modified_by": "Administrator",
+ "module": "Document Manager",
+ "name": "Document Master",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

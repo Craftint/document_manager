@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-12 19:24:49.457507",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dt",
+  "insert_after"
+ ],
+ "fields": [
+  {
+   "fieldname": "insert_after",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insert After"
+  },
+  {
+   "fieldname": "dt",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "options": "DocType"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-12 23:13:24.032887",
+ "modified_by": "Administrator",
+ "module": "Document Manager",
+ "name": "Assigned DocTypes",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

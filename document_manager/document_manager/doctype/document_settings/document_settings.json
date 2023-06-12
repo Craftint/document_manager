@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-12 13:55:54.220028",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assigned_doctpyes_section",
+  "assigned_doctypes",
+  "column_break_eplt1",
+  "notification_settings_section",
+  "email_alert",
+  "notification_template_section",
+  "subject",
+  "message",
+  "whatsapp_alert",
+  "column_break_mkrwr",
+  "recepients"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "email_alert",
+   "fieldtype": "Check",
+   "label": "Enable Email Alert"
+  },
+  {
+   "default": "0",
+   "fieldname": "whatsapp_alert",
+   "fieldtype": "Check",
+   "label": "WhatsApp Alert"
+  },
+  {
+   "fieldname": "notification_template_section",
+   "fieldtype": "Section Break",
+   "label": "Notification Template"
+  },
+  {
+   "description": "Eg:- {{document_name}} Expiry Alert",
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Text Editor",
+   "label": "Message"
+  },
+  {
+   "fieldname": "assigned_doctpyes_section",
+   "fieldtype": "Section Break",
+   "label": "Assigned DocTypes"
+  },
+  {
+   "fieldname": "assigned_doctypes",
+   "fieldtype": "Table",
+   "label": "DocType List",
+   "options": "Assigned DocTypes"
+  },
+  {
+   "fieldname": "column_break_eplt1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notification_settings_section",
+   "fieldtype": "Tab Break",
+   "label": "Notification Settings"
+  },
+  {
+   "fieldname": "column_break_mkrwr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recepients",
+   "fieldtype": "Table",
+   "label": "Recepients",
+   "options": "Expiry Alert Recipient"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-06-12 23:08:45.173365",
+ "modified_by": "Administrator",
+ "module": "Document Manager",
+ "name": "Document Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
