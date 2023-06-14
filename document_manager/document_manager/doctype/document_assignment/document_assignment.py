@@ -21,6 +21,7 @@ class DocumentAssignment(Document):
 			section_break = frappe.get_doc({
 				"doctype":"Custom Field",
 				"dt":self.dt,
+				"module":"Document Manager",
 				'label':'Related Documents',
 				"fieldtype":"Section Break",
 				"fieldname":"related_documents_section_break",
@@ -32,6 +33,7 @@ class DocumentAssignment(Document):
 			field = frappe.get_doc({
 				"doctype":"Custom Field",
 				"dt":self.dt,
+				"module":"Document Manager",
 				"fieldname":"related_documents_table",
 				"label":"Related Documents",
 				"options":"Related Document",

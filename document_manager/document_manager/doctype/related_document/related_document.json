@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{document_name} - {party}",
+ "autoname": "format:{document_name}-{parenttype}-{parent}",
  "creation": "2023-06-12 12:37:15.974367",
  "default_view": "List",
  "doctype": "DocType",
@@ -84,7 +84,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-06-14 13:49:46.547992",
+ "modified": "2023-06-14 14:02:14.392743",
  "modified_by": "Administrator",
  "module": "Document Manager",
  "name": "Related Document",
