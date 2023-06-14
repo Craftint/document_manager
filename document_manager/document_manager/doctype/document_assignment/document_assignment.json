@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "autoname": "format:{dt}",
+ "creation": "2023-06-13 23:18:35.317894",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dt",
+  "column_break_eplt1",
+  "insert_after",
+  "sn_bk",
+  "field_id",
+  "notification_settings_section",
+  "email_alert",
+  "subject",
+  "message",
+  "column_break_mkrwr",
+  "whatsapp_alert",
+  "wa_msg_templates",
+  "recepients_section",
+  "recipients"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_eplt1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "email_alert",
+   "fieldtype": "Check",
+   "label": "Enable Email Alert"
+  },
+  {
+   "depends_on": "eval:doc.email_alert == 1",
+   "description": "Eg:- {{document_name}} Expiry Alert",
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Email Subject"
+  },
+  {
+   "depends_on": "eval:doc.email_alert == 1",
+   "fieldname": "message",
+   "fieldtype": "Text Editor",
+   "label": "Email Body"
+  },
+  {
+   "default": "0",
+   "fieldname": "whatsapp_alert",
+   "fieldtype": "Check",
+   "label": "WhatsApp Alert"
+  },
+  {
+   "fieldname": "column_break_mkrwr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recipients",
+   "fieldtype": "Table",
+   "options": "Expiry Alert Recipient"
+  },
+  {
+   "fieldname": "dt",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "options": "DocType",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "insert_after",
+   "fieldtype": "Select",
+   "label": "Insert After"
+  },
+  {
+   "fieldname": "notification_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Notification Settings"
+  },
+  {
+   "depends_on": "eval:doc.whatsapp_alert == 1",
+   "fieldname": "wa_msg_templates",
+   "fieldtype": "Long Text",
+   "label": "WhatsApp Message Template"
+  },
+  {
+   "fieldname": "recepients_section",
+   "fieldtype": "Section Break",
+   "label": "Recepients"
+  },
+  {
+   "fieldname": "field_id",
+   "fieldtype": "Data",
+   "label": "Field ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sn_bk",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Section Break ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-14 09:01:30.378924",
+ "modified_by": "Administrator",
+ "module": "Document Manager",
+ "name": "Document Assignment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
