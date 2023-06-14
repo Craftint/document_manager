@@ -13,25 +13,17 @@
   "sn_bk",
   "field_id",
   "notification_settings_section",
-  "email_alert",
   "subject",
   "message",
   "column_break_mkrwr",
-  "whatsapp_alert",
-  "wa_msg_templates",
-  "recepients_section",
+  "wa_msg_template",
+  "recipients_section",
   "recipients"
  ],
  "fields": [
   {
    "fieldname": "column_break_eplt1",
    "fieldtype": "Column Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "email_alert",
-   "fieldtype": "Check",
-   "label": "Enable Email Alert"
   },
   {
    "depends_on": "eval:doc.email_alert == 1",
@@ -45,12 +37,6 @@
    "fieldname": "message",
    "fieldtype": "Text Editor",
    "label": "Email Body"
-  },
-  {
-   "default": "0",
-   "fieldname": "whatsapp_alert",
-   "fieldtype": "Check",
-   "label": "WhatsApp Alert"
   },
   {
    "fieldname": "column_break_mkrwr",
@@ -82,17 +68,6 @@
    "label": "Notification Settings"
   },
   {
-   "depends_on": "eval:doc.whatsapp_alert == 1",
-   "fieldname": "wa_msg_templates",
-   "fieldtype": "Long Text",
-   "label": "WhatsApp Message Template"
-  },
-  {
-   "fieldname": "recepients_section",
-   "fieldtype": "Section Break",
-   "label": "Recepients"
-  },
-  {
    "fieldname": "field_id",
    "fieldtype": "Data",
    "label": "Field ID",
@@ -103,11 +78,22 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Section Break ID"
+  },
+  {
+   "fieldname": "recipients_section",
+   "fieldtype": "Section Break",
+   "label": "Recipients"
+  },
+  {
+   "depends_on": "eval:doc.whatsapp_alert == 1",
+   "fieldname": "wa_msg_template",
+   "fieldtype": "Long Text",
+   "label": "WhatsApp Message Template"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-14 12:46:09.488823",
+ "modified": "2023-06-14 14:23:45.485139",
  "modified_by": "Administrator",
  "module": "Document Manager",
  "name": "Document Assignment",

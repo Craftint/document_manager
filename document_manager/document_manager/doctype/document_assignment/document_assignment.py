@@ -5,8 +5,6 @@ import frappe
 from frappe.model.document import Document
 
 class DocumentAssignment(Document):
-	def before_save(self):
-		pass
 	def on_update(self):
 		if not self.field_id:
 			existing = frappe.db.get_all('Custom Field',{'options':'Related Document','dt':self.dt})
@@ -52,10 +50,27 @@ class DocumentAssignment(Document):
 			cf = frappe.get_doc('Custom Field',self.field_id)
 			cf.insert_after = 'related_documents_section_break'
 			cf.save()
-
 	def on_trash(self):
 		if self.sn_bk:
 			frappe.delete_doc('Custom Field',self.sn_bk)
 		if self.field_id:
 			frappe.delete_doc('Custom Field',self.field_id)
-		
+	
+	def get_email_recipients(self):
+		rec_list = self.recipients
+
+		return
+
+def send_alerts():
+
+	pass
+
+
+def get_email_recipients():
+	rec_data = frappe.db.sql("""
+	select exr.user,exr.role,exr.df,exr.email,exr.whatsapp,das.dt,das.subject,das.message,das.wa_msg_template from `tabExpiry Alert Recipient` exr inner join `tabDocument Assignment` das
+	""",as_dict=True)
+
+	
+
+
