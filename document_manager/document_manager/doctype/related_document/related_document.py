@@ -2,7 +2,7 @@
 # For license information, please see license.txt
 
 # import frappe
-from frappe.model.related_document import RelatedDocument
+from frappe.model.document import Document
 
-class RelatedDocument(RelatedDocument):
+class RelatedDocument(Document):
 	pass

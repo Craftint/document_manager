@@ -33,6 +33,7 @@ class DocumentAssignment(Document):
 				"doctype":"Custom Field",
 				"dt":self.dt,
 				"fieldname":"related_documents_table",
+				"label":"Related Documents",
 				"options":"Related Document",
 				"fieldtype":"Table",
 				"insert_after":"Related Documents"
