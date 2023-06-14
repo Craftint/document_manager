@@ -10,8 +10,6 @@
  "field_order": [
   "document_name",
   "default_expiry",
-  "column_break_fgcm6",
-  "alert_before",
   "section_break_z1qmw",
   "description"
  ],
@@ -34,16 +32,6 @@
    "label": "Default Expiry (In Months)"
   },
   {
-   "default": "30",
-   "fieldname": "alert_before",
-   "fieldtype": "Int",
-   "label": "Alert Before (In Days)"
-  },
-  {
-   "fieldname": "column_break_fgcm6",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "section_break_z1qmw",
    "fieldtype": "Section Break",
    "hide_border": 1
@@ -51,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-12 15:48:25.090657",
+ "modified": "2023-06-14 12:45:32.795156",
  "modified_by": "Administrator",
  "module": "Document Manager",
  "name": "Document Master",
