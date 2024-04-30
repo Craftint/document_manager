@@ -7,6 +7,18 @@ app_description = "Document Manager"
 app_email = "dx"
 app_license = "MIT"
 
+doctype_js = {"Sales Order" : "public/js/sales_order.js"}
+
+
+scheduler_events = {
+	"daily": [
+        "document_manager.employee.expiry_doc_creation",
+        "document_manager.customer.expiry_doc_creation",
+        "document_manager.vehicle.expiry_doc_creation"
+	]
+}
+
+
 # Includes in <head>
 # ------------------
 
@@ -118,7 +130,7 @@ app_license = "MIT"
 #		"document_manager.tasks.all"
 #	],
 #	"daily": [
-#		"document_manager.tasks.daily"
+#		"document_manager.events.employee"
 #	],
 #	"hourly": [
 #		"document_manager.tasks.hourly"

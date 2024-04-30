@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2024-04-24 10:29:31.220960",
+ "date_changed": "custom_notification_date",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Document Expiry",
+ "enabled": 0,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Your Document <b>{{doc.document_name}}</b> expires on <b>{{doc.get_formatted(\"date_of_expiry\")}}</b>. Please renew it soon.",
+ "modified": "2024-04-29 11:12:48.681288",
+ "modified_by": "Administrator",
+ "module": "Document Manager",
+ "name": "Document Expiry",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "user,recipient"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Ktmegha02",
+ "sender_email": "ktmegha02@gmail.com",
+ "subject": "Action Required: Your Document is Approaching its Expiry Date"
+}

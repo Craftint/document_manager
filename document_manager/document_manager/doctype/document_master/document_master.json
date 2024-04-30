@@ -26,10 +26,11 @@
    "label": "Description"
   },
   {
-   "default": "0",
    "fieldname": "default_expiry",
    "fieldtype": "Float",
-   "label": "Default Expiry (In Months)"
+   "in_list_view": 1,
+   "label": "Default Expiry (In Months)",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_z1qmw",
@@ -39,7 +40,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-14 12:45:32.795156",
+ "modified": "2024-04-24 11:24:08.973172",
  "modified_by": "Administrator",
  "module": "Document Manager",
  "name": "Document Master",

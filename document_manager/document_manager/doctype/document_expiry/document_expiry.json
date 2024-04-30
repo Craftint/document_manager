@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-24 11:01:02.986141",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "document_type",
+  "name1",
+  "column_break_gvht1",
+  "date_of_expiry",
+  "default_expiry_in_months",
+  "notification_date",
+  "whatsapp_number",
+  "section_break_sjgdo",
+  "recipient"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date Of Expiry"
+  },
+  {
+   "fieldname": "column_break_gvht1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_expiry_in_months",
+   "fieldtype": "Float",
+   "label": "Default Expiry (in months)"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "label": "Document Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Dynamic Link",
+   "label": "Name",
+   "options": "document_type"
+  },
+  {
+   "fieldname": "notification_date",
+   "fieldtype": "Date",
+   "label": "Notification Date"
+  },
+  {
+   "fieldname": "whatsapp_number",
+   "fieldtype": "Data",
+   "label": "Whatsapp Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Link",
+   "label": "Document Name",
+   "options": "Document Master"
+  },
+  {
+   "fieldname": "recipient",
+   "fieldtype": "Table",
+   "label": "Recipient",
+   "options": "Expiry Alert Recipient"
+  },
+  {
+   "fieldname": "section_break_sjgdo",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-29 15:57:37.961916",
+ "modified_by": "Administrator",
+ "module": "Document Manager",
+ "name": "Document Expiry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
